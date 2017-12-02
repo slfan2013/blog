@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Setup an R-calculating Website</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+<nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Sili Fan</strong>
+                             </span> <span class="text-muted text-xs block">Principal Statistician <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-home"></i> <span class="nav-label">Home</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                                </a>
+                                <div class="media-body">
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="profile.html">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="grid_options.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>Blog</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a>blog</a>
+                        </li>
+                        <li class="active">
+                            <strong>Article</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+
+        <div class="wrapper wrapper-content  animated fadeInRight article">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <div class="pull-right">
+                                <button class="btn btn-white btn-xs" type="button">Model</button>
+                                <button class="btn btn-white btn-xs" type="button">Publishing</button>
+                                <button class="btn btn-white btn-xs" type="button">Modern</button>
+                            </div>
+                            <div class="text-center article-title">
+                            <span class="text-muted"><i class="fa fa-clock-o"></i> 29th Nov 2017</span>
+                                <h1>
+                                    Setup an R-calculating Website
+                                </h1>
+
+                            </div>
+                            <p>You may find this blog useful if you know how to use <a href="https://www.rstudio.com/" target="_blank">R</a>, and would like to provide some statistical analysis tool-website for people to use. </p>
+                            <p>Step by step, this blog shows how to set up such a website/blog that is capable of</p>
+                            <ul>
+                              <li>performing calculation using statistical software, R.</li>
+                              <li class="tooltip-demo">easily hosted through a <b  data-toggle="tooltip" data-placement="top" title="a free calculation server is really rare!">free</b> server, which is <a href="https://www.opencpu.org/cloud.html" target="_blank">opencpu cloud</a>.</li>
+                              <li>100% control over the web-design.</li>
+                            </ul>
+                            <p>Basically, you could host a blog/website having a similar concept with <a href="https://shiny.rstudio.com/gallery/" target="_blank">Shiny</a> but with much more flexibility and calculation power. Actually, this entire blog is done this way.</p>
+                            <h2><b>1. Create an R package</b></h2>
+                            <p>First you have to create an R package that contain all the functions that you'll need in your website. Consider R as a back-end language (like <em>pt</em>). Now, let's assume that we would like to create a website that could do simple linear regression.</p>
+                            <ol>
+                              <li>Open RStudio, click "File" -> "New Project"</li>
+                              <li>Click "New Directory" --> "R package"</li>
+                              <li>Set package name as "simple_linear_regression_web"</li>
+                              <li>Remember to brower your R package to where you would like to put it. (For example, ~/Github)</li>
+                              <li>Write a R simple linear function. You can download my functino script <a href="">here</a>. Don't worry about the parameters, I'll explain soon.</li>
+                              <li>Click "Build". Congraduations! You have just set up your back-end calculation environment! Let's keep going!</li>
+                            </ol>
+                            <h2><b>2. Write a website</b></h2>
+                            <p>Here you can design your website whatever you like. </p>
+                            <p>You have to have some website development skill. Actually, this is pretty simple to pick up, you just have to know html and javascript. I learned most of the website development skill (very basic but enough) from <a href="https://www.w3schools.com/" target="_blank">W3School</a>.</p>
+                            <p>Also, you could pick up a web theme by Googleling it. For simplicity, let's download my <a href="">template</a> for now.</p>
+                            <ol>
+                              <li>Open your R package using file explorer. (For example, ~/Github/simple_linear_regression_web).</li>
+                              <li>put what you just downloaded in this folder. Note, the <em>inst</em> must be in the root folder of your package.</li>
+                              <li>Congraduations! You have just set up your front-end UI successfully! Now, let's connect back-end to front-end.</li>
+                            </ol>
+                            <h2><b>3. Set up <em>OpenCPU</em></b></h2>
+                            <p><em>OpenCPU</em> is the magic that connects your back-end calculation environment <em>(R)</em> to your front-end UI <em>(html, javascript, etc)</em>! And setting it up is super easy. You just have to a few steps in both back-end and front-end.</p>
+
+
+
+
+
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">
+                                        <h5>Tags:</h5>
+                                        <button class="btn btn-primary btn-xs" type="button">Model</button>
+                                        <button class="btn btn-white btn-xs" type="button">Publishing</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small text-right">
+                                        <h5>Stats:</h5>
+                                        <div> <i class="fa fa-comments-o"> </i> 56 comments </div>
+                                        <i class="fa fa-eye"> </i> 144 views
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+
+                                    <h2>Comments:</h2>
+                                    <div class="social-feed-box">
+                                        <div class="social-avatar">
+                                            <a href="" class="pull-left">
+                                                <img alt="image" src="img/a1.jpg">
+                                            </a>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    Andrew Williams
+                                                </a>
+                                                <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+                                            </div>
+                                        </div>
+                                        <div class="social-body">
+                                            <p>
+                                                Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                                                default model text, and a search for 'lorem ipsum' will uncover many web sites still
+                                                default model text.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="social-feed-box">
+                                        <div class="social-avatar">
+                                            <a href="" class="pull-left">
+                                                <img alt="image" src="img/a2.jpg">
+                                            </a>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    Michael Novek
+                                                </a>
+                                                <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+                                            </div>
+                                        </div>
+                                        <div class="social-body">
+                                            <p>
+                                                Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                                                default model text, and a search for 'lorem ipsum' will uncover many web sites still
+                                                default model text, and a search for 'lorem ipsum' will uncover many web sites still
+                                                in their infancy. Packages and web page editors now use Lorem Ipsum as their
+                                                default model text.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="social-feed-box">
+                                        <div class="social-avatar">
+                                            <a href="" class="pull-left">
+                                                <img alt="image" src="img/a3.jpg">
+                                            </a>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    Alice Mediater
+                                                </a>
+                                                <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+                                            </div>
+                                        </div>
+                                        <div class="social-body">
+                                            <p>
+                                                Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                                                default model text, and a search for 'lorem ipsum' will uncover many web sites still
+                                                in their infancy. Packages and web page editors now use Lorem Ipsum as their
+                                                default model text.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="social-feed-box">
+                                        <div class="social-avatar">
+                                            <a href="" class="pull-left">
+                                                <img alt="image" src="img/a5.jpg">
+                                            </a>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    Monica Flex
+                                                </a>
+                                                <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+                                            </div>
+                                        </div>
+                                        <div class="social-body">
+                                            <p>
+                                                Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                                                default model text, and a search for 'lorem ipsum' will uncover many web sites still
+                                                in their infancy. Packages and web page editors now use Lorem Ipsum as their
+                                                default model text.
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2017
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- PouchDB -->
+    <script src="js/pouchdb.min.js"></script>
+
+    <!-- OpenCPU -->
+    <script src="js/opencpu-0.5.js"></script>
+
+    <!-- Google Sign-In -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</body>
+
+</html>

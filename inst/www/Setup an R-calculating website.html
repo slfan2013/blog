@@ -404,6 +404,36 @@
 
       function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
+        // add new user to the user_info database.
+        var db_user_info = new PouchDB('http://35.193.94.118:5984/user_info');
+        db_user_info.allDocs().then(function(result){
+          var id = [];
+          for(var i=0; i<result.rows.length;i++){
+            id.push(result.rows[i].id)
+          }
+          return(id)
+        }).then(function(id){
+          if(id.indexOf(profile.getId()) === -1){
+            var ip;
+            $.getJSON('//api.ipify.org?format=jsonp&callback=?', function(data) {
+               ip = data.ip
+            });
+           var new_user = {
+             "id": profile.getId(),
+             'Name': profile.getName(),
+             'Image URL': profile.getImageUrl(),
+             'Email': profile.getEmail(),
+             'ip':ip
+           }
+           db_user_info.put(new_user)
+          }
+        }).catch(function (err) {
+            console.log(err);
+        });
+
+
+
+
         console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
         console.log('Name: ' + profile.getName());
         console.log('Image URL: ' + profile.getImageUrl());
